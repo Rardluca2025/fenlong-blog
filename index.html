@@ -1,93 +1,13 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fenlong's Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>fenlong-blog</title>
   </head>
   <body>
-    <header>
-      <h1>fenlong's Blog</h1>
-      <p class="subtitle">记录技术、生活与思考 | fenlong 的个人空间</p>
-    </header>
-
-    <article>
-      <h2>第一篇博客：Hello World!</h2>
-      <p class="date">发布于：2026年8月24日</p>
-      <p>这是我的个人博客，基于 Cloudflare Pages 静态部署。终于上线啦！</p>
-    </article>
-    <article>
-      <h2>第二篇博客：成功解锁 CI/CD 自动化部署！</h2>
-      <p class="date">发布于：2026年8月24日</p>
-      <p>
-        今天顺利将博客与 GitHub 仓库完成了关联。现在只要在本地敲下
-        <code>git push</code>，Cloudflare Pages
-        就会自动拉取最新代码并完成重新构建！
-      </p>
-      <p>
-        告别了手动打包和上传的繁琐过程，体验到了现代 Web
-        开发中自动化部署（CI/CD）的流畅与高效。下一阶段，准备开始用 CSS 和原生
-        JS 尝试优化页面的样式与交互！
-      </p>
-    </article>
-    <article>
-      <h2>第三篇博客：自动构建测试与挂载机制探索</h2>
-      <p class="date">发布于：2026年8月24日</p>
-      <p>这是用来测试 GitHub 与 Cloudflare Pages 自动同步功能的第三篇博客。</p>
-      <p>
-        顺便了解了一下 Cloudflare 的托管机制：作为静态站点部署在 Cloudflare
-        Pages 上是完全没有运行时间限制的，一年 365 天无间断免费在线，只有在
-        <code>git push</code>
-        触发代码构建的那十几秒钟才会消耗免费的构建额度。接下来继续加油，准备开始打磨前端样式！
-      </p>
-    </article>
-    <!-- 技术栈板块 -->
-     <div>
-      <h3 class="section-title">技术栈</h3>
-       <div class="badge-container"></div>
-      <span class="badge-item" style="--brand-color: #e34f26">
-        <img
-          src="https://img.shields.io/badge/HTML5-181717?style=for-the-badge&logo=html5&logoColor=e34f26"
-          alt="HTML5"
-        />
-      </span>
-      <span class="badge-item" style="--brand-color: #663399">
-        <img
-          src="https://img.shields.io/badge/CSS-181717?style=for-the-badge&logo=css&logoColor=663399"
-          alt="CSS"
-        />
-      </span>
-      <span class="badge-item" style="--brand-color: #f7df1e">
-        <img
-          src="https://img.shields.io/badge/JavaScript-181717?style=for-the-badge&logo=javascript&logoColor=f7df1e"
-          alt="JavaScript"
-        />
-      </span>
-      <span class="badge-item" style="--brand-color: #4fc08d">
-        <img
-          src="https://img.shields.io/badge/Vue.js-181717?style=for-the-badge&logo=vuedotjs&logoColor=4fc08d"
-          alt="Vue.js"
-        />
-      </span>
-      <span class="badge-item" style="--brand-color: #cb3837">
-        <img
-          src="https://img.shields.io/badge/NPM-181717?style=for-the-badge&logo=npm&logoColor=cb3837"
-          alt="NPM"
-        />
-      </span>
-    </div>
-    </div>
-<!-- 学习工具板块 -->
-
-      <h3 class="section-title">学习工具</h3>
-          <div class="badge-container">
-   <span class="badge-item" style="--brand-color: #04AA6D;">
-      <img src="https://img.shields.io/badge/W3_Schools-181717?style=for-the-badge&logo=w3schools&logoColor=04AA6D" alt="W3 Schools">
-    </span>
-    <span class="badge-item" style="--brand-color: #ffffff;">
-      <img src="https://img.shields.io/badge/MDN_Web_Docs-181717?style=for-the-badge&logo=mdnwebdocs&logoColor=ffffff" alt="MDN Web Docs">
-    </span>
-    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
