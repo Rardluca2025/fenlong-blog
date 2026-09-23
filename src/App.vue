@@ -17,7 +17,13 @@
           <el-menu-item index="/About">关于</el-menu-item>
       </el-menu>
     </header>
-
+<body>
+  <div class="card">
+  <p>日期：2026-09-20</p>
+<p>积累前端技术栈-目标Web基础</p>
+<p>HTML、CSS、JS ES6+</p>
+</div>
+</body>
     <!-- 路由出口 -->
     <main class="main-content">
       <router-view />

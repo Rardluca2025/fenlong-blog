@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>汾陇的博客</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- header当容器，放置顶部导航栏、搜索框、Banner -->
+      <a class="logo" href="#" aria-label="汾陇的博客">
+        <img src="./logo-white.svg" alt="汾陇" />
+      </a>
+      <!-- <p>时间就是生命</p> -->
+      <!-- arial-label，无障碍模块 -->
+      <nav aria-label="主导航">
+        <ul>
+          <li class="active"><a href="#" aria-current="page">首页</a></li>
+          <li><a href="#">博客</a></li>
+          <li><a href="#">项目集</a></li>
+          <li><a href="#">技术栈</a></li>
+          <li><a href="#">关于</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="layout">
+      <!-- 侧边栏 -->
+      <aside class="sidebar" aria-label="侧边栏">
+        <!-- 搜索模块 -->
+        <search class="widget search-widget">
+          <h2 class="widget-title">搜索</h2>
+          <form action="#" method="get" class="search-form">
+            <select name="scope" aria-lable="搜索范围">
+              <option value="all">全局</option>
+              <option value="blog">博客</option>
+              <option value="item">项目集</option>
+            </select>
+            <div class="search-input-group">
+              <label for="sidebar-q" class="visually-hidden">搜索关键字</label>
+              <input type="search" id="sidebar-q" name="q" />
+              <button type="submit" class="go-btn">检索</button>
+            </div>
+          </form>
+        </search>
+
+        <!-- 资源导航模块 -->
+        <nav class="widget resource-widget" aria-label="资源导航">
+          <h2 class="widget-heading">内容列表:</h2>
+          <ul class="icon-list circle-icons">
+            <li><a href="#">博客</a></li>
+            <li><a href="#">技术栈</a></li>
+            <li><a href="#">项目集</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <h2>最新文章</h2>
+        <article>
+          <p>
+            测试日志
+            <time datetime="2026-09-24">2026-09-24</time>
+          </p>
+
+          <p>
+            这是文章摘要。正文里可以用 <strong>重要内容</strong>、
+            <em>强调</em>、<a href="/tags/html/">链接</a> 等。
+          </p>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p>@2026 汾陇的博客 原型设计</p>
+    </footer>
+  </body>
+  <script></script>
+</html>
